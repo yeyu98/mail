@@ -2,7 +2,7 @@
  * @Author: yeyu98
  * @Date: 2025-03-24 22:08:34
  * @LastEditors: yeyu98
- * @LastEditTime: 2025-03-27 01:44:14
+ * @LastEditTime: 2025-03-27 01:48:29
  * @Description:
  */
 import { defineConfig } from 'drizzle-kit'
