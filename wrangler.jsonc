@@ -10,7 +10,7 @@
         "binding": "DB",
         "database_name": "mail-db",
         "database_id": "db1",
-        "migrations_dir": "./drizzle"
+        "migrations_dir": "drizzle"
       }
     ]
 }
