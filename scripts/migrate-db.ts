@@ -24,10 +24,7 @@ const promiseExec = (command: string): Promise<ExecResult> => {
 
 const execMigrations = async (dbName: string, execEnv: string) => {
     try {
-        const {stdout} = await promiseExec('drizzle-kit generate')
-        if(stdout.indexOf('nothing to migrate') !== -1) {
-            return
-        }
+        await promiseExec('drizzle-kit generate')
         await promiseExec(`npx wrangler d1 migrations apply ${dbName} ${execEnv}`)
     } catch (err) {
         console.error(`migrate-db exec error: ${err}`);

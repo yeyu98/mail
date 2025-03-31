@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "generate": "drizzle-kit generate",
-    "migrate": "tsx scripts/migrate-db.ts"
+    "migrate": "tsx scripts/migrate-db.ts",
+    "dev:worker": "wrangler dev",
+    "deploy:worker": "wrangler deploy"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.2",
@@ -23,6 +25,7 @@
     "tw-animate-css": "^1.2.4"
   },
   "devDependencies": {
+    "@cloudflare/next-on-pages": "^1.13.10",
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
